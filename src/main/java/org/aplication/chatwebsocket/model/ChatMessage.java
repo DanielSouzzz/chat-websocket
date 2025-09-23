@@ -1,12 +1,12 @@
 package org.aplication.chatwebsocket.model;
 
-public class chatMessage {
+public class ChatMessage {
     private String from;
     private String text;
 
-    public chatMessage(){}
+    public ChatMessage(){}
 
-    public chatMessage(String from, String text){
+    public ChatMessage(String from, String text){
         this.from = from;
         this.text = text;
     }
