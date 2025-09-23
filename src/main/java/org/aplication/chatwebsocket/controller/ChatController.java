@@ -5,13 +5,14 @@ import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 
+import java.time.Instant;
+
 @Controller
 public class ChatController {
 
     @MessageMapping("/sendMessage")
     @SendTo("/chat")
     public ChatMessage sendMessage(ChatMessage message){
-        System.out.println("Mensagem recebida: "+ message.getText());
-        return message;
+        return new ChatMessage(message.getFrom(), message.getText(), Instant.now());
     }
 }
