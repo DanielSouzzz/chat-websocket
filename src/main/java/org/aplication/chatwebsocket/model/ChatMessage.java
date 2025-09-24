@@ -5,7 +5,8 @@ import org.aplication.chatwebsocket.util.DateTimeUtils;
 
 import java.time.Instant;
 
-public class ChatMessage {
+public class
+ChatMessage {
     private String from;
     private String text;
     private Instant time;
