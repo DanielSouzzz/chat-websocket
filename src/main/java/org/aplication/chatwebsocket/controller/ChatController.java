@@ -1,18 +1,18 @@
 package org.aplication.chatwebsocket.controller;
 
-import org.aplication.chatwebsocket.model.ChatMessage;
+import org.aplication.chatwebsocket.model.MessageEntity;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 
-import java.time.Instant;
+import java.time.LocalDateTime;
 
 @Controller
 public class ChatController {
 
     @MessageMapping("/sendMessage")
     @SendTo("/chat")
-    public ChatMessage sendMessage(ChatMessage message){
-        return new ChatMessage(message.getFrom(), message.getText(), Instant.now());
+    public MessageEntity sendMessage(MessageEntity message){
+        return new MessageEntity(message.getSender(), message.getText(), LocalDateTime.now());
     }
 }
