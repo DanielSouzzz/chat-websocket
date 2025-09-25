@@ -28,7 +28,6 @@ buildNumber.properties
 !src/test/resources/
 
 ### Environment / Config ###
-.env
 *.yml
 *.yaml
 application-*.properties
