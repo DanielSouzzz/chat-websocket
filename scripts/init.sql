@@ -1,4 +1,4 @@
-use myapp;
+use myappdb;
 
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
