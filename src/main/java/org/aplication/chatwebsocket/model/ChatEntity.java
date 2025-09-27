@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import org.aplication.chatwebsocket.model.enums.Chat_Type;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -16,7 +18,11 @@ public class ChatEntity {
     @Enumerated(EnumType.STRING)
     private Chat_Type chatType;
 
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
+
+    @OneToMany(mappedBy = "chat")
+    private List<MessageEntity> messages = new ArrayList<>();
 
     public ChatEntity() {
     }
