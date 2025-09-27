@@ -26,6 +26,7 @@ public class MessageStatus {
     @Column(name = "read_at")
     private LocalDateTime readAt;
 
+
     public MessageStatus() {}
 
     public MessageStatus(MessageStatusId id, MessageEntity message, UserEntity user, Boolean isRead) {
