@@ -13,6 +13,17 @@ CREATE TABLE IF NOT EXISTS chats (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    chat_id INT NOT NULL,
+    text TEXT,
+    sender_id INT NOT NULL,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (chat_id) REFERENCES chats(id),
+    FOREIGN KEY (sender_id) REFERENCES users(id)
+);
+
 CREATE TABLE IF NOT EXISTS chat_participants (
     chat_id INT NOT NULL,
     user_id INT NOT NULL,
@@ -20,16 +31,6 @@ CREATE TABLE IF NOT EXISTS chat_participants (
     PRIMARY KEY (chat_id, user_id),
     FOREIGN KEY (chat_id) REFERENCES chats(id),
     FOREIGN KEY (user_id) REFERENCES users(id)
-);
-
-CREATE TABLE IF NOT EXISTS messages (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    chat_id INT NOT NULL,
-    text TEXT,
-    sender_id INT NOT NULL,
-
-    FOREIGN KEY (chat_id) REFERENCES chats(id),
-    FOREIGN KEY (sender_id) REFERENCES users(id)
 );
 
 CREATE TABLE IF NOT EXISTS message_status (
