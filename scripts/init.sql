@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS message_status (
     message_id INT NOT NULL,
     user_id INT NOT NULL,
     is_read BOOLEAN DEFAULT FALSE,
-    read_at DATETIME,
+    read_at DATETIME DEFAULT NULL,
 
     PRIMARY KEY (message_id, user_id),
     FOREIGN KEY (message_id) REFERENCES messages(id),
