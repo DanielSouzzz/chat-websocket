@@ -1,5 +1,6 @@
 services:
-  mysql:
+
+  db-chat:
     image: mysql:8.0
     restart: unless-stopped
     environment:
@@ -7,11 +8,11 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${DB_USER}
       MYSQL_PASSWORD: ${DB_PASS}
-    expose:
-      - "3306"
+    ports:
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - backend
     mem_limit: 1g
