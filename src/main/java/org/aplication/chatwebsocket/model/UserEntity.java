@@ -23,14 +23,14 @@ public class UserEntity {
     private String email;
 
     @Column(name = "created_at")
-    private LocalDateTime createdat;
+    private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "sender")
     private List<MessageEntity> messages = new ArrayList<>();
 
     @PrePersist
     public void prePersist(){
-        this.createdat = LocalDateTime.now();
+        this.createdAt = LocalDateTime.now();
     }
 
     public UserEntity() {
@@ -40,7 +40,7 @@ public class UserEntity {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.createdat = created_at;
+        this.createdAt = created_at;
     }
 
     public Long getId() {
@@ -55,8 +55,8 @@ public class UserEntity {
         return email;
     }
 
-    public LocalDateTime getCreatedat() {
-        return createdat;
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 
     public void setName(String name) {
@@ -71,12 +71,12 @@ public class UserEntity {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         UserEntity that = (UserEntity) o;
-        return Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(email, that.email) && Objects.equals(createdat, that.createdat) && Objects.equals(messages, that.messages);
+        return Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(email, that.email) && Objects.equals(createdAt, that.createdAt) && Objects.equals(messages, that.messages);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, email, createdat, messages);
+        return Objects.hash(id, name, email, createdAt, messages);
     }
 
     @Override
@@ -85,7 +85,7 @@ public class UserEntity {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", created_at=" + createdat +
+                ", created_at=" + createdAt +
                 ", messages=" + messages +
                 '}';
     }

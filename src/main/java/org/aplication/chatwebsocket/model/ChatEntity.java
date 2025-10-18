@@ -24,6 +24,11 @@ public class ChatEntity {
     @OneToMany(mappedBy = "chat")
     private List<MessageEntity> messages = new ArrayList<>();
 
+    @PrePersist
+    public void prePersist(){
+        this.createdAt = LocalDateTime.now();
+    }
+
     public ChatEntity() {
     }
 
