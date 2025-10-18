@@ -26,7 +26,10 @@ public class UserEntity {
     private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "sender")
-    private List<MessageEntity> messages = new ArrayList<>();
+    private List<MessageEntity> sentMessages = new ArrayList<>();
+
+    @OneToMany(mappedBy = "receiver")
+    private List<MessageEntity> receivedMessages = new ArrayList<>();
 
     @PrePersist
     public void prePersist(){
@@ -36,11 +39,11 @@ public class UserEntity {
     public UserEntity() {
     }
 
-    public UserEntity(Long id, String name, String email, LocalDateTime created_at) {
+    public UserEntity(Long id, String name, String email, LocalDateTime createdAt) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.createdAt = created_at;
+        this.createdAt = createdAt;
     }
 
     public Long getId() {
@@ -69,14 +72,15 @@ public class UserEntity {
 
     @Override
     public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) return true;
+        if (!(o instanceof UserEntity)) return false;
         UserEntity that = (UserEntity) o;
-        return Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(email, that.email) && Objects.equals(createdAt, that.createdAt) && Objects.equals(messages, that.messages);
+        return id != null && id.equals(that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, email, createdAt, messages);
+        return 31;
     }
 
     @Override
@@ -85,8 +89,7 @@ public class UserEntity {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", created_at=" + createdAt +
-                ", messages=" + messages +
+                ", createdAt=" + createdAt +
                 '}';
     }
 }

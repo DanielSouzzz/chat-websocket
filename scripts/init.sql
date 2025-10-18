@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS messages (
     chat_id INT NOT NULL,
     text TEXT,
     sender_id INT NOT NULL,
+    receiver_id INT NOT NULL,
     createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
 
     FOREIGN KEY (chat_id) REFERENCES chats(id),

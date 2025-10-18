@@ -20,6 +20,10 @@ public class MessageEntity {
     @JoinColumn(name = "sender_id", nullable = false)
     private UserEntity sender;
 
+    @ManyToOne
+    @JoinColumn(name = "receiver_id", nullable = false)
+    private UserEntity receiver;
+
     private String text;
 
     @Column(name = "created_at")
@@ -74,6 +78,14 @@ public class MessageEntity {
         this.text = text;
     }
 
+    public UserEntity getReceiver() {
+        return receiver;
+    }
+
+    public void setReceiver(UserEntity receiver) {
+        this.receiver = receiver;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -96,4 +108,5 @@ public class MessageEntity {
                 ", time=" + createdAt +
                 '}';
     }
+
 }
