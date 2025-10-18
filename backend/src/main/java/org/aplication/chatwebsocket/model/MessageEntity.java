@@ -86,6 +86,7 @@ public class MessageEntity {
         this.receiver = receiver;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
