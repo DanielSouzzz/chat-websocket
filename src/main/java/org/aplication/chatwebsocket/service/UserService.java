@@ -13,6 +13,7 @@ public class UserService {
     }
 
     public UserEntity createUser(UserEntity request){
+        System.out.println(request);
         return userRepository.save(request);
     }
 }

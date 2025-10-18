@@ -11,8 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.net.URI;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+
 @RestController
 @RequestMapping("/api/users")
+@Tag(name = "Users", description = "Operações relacionadas a usuários")
 public class UserController {
     private final UserService userService;
 
@@ -21,7 +27,12 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<UserEntity> createUser(@Valid @RequestBody UserEntity user){
+    @Operation(summary = "Cria um novo usuário", description = "Recebe um UserEntity válido e cria o usuário, retornando 201 com Location.")
+    @ApiResponses({
+            @ApiResponse(responseCode = "201", description = "Usuário criado com sucesso"),
+            @ApiResponse(responseCode = "400", description = "Dados inválidos")
+    })
+    public ResponseEntity<UserEntity> createUser(@Valid @RequestBody UserEntity user) {
         UserEntity savedUser = userService.createUser(user);
 
         URI location = URI.create("/api/users/" + savedUser.getId());
@@ -30,5 +41,4 @@ public class UserController {
                 .created(location)
                 .body(savedUser);
     }
-
 }

@@ -23,10 +23,15 @@ public class UserEntity {
     private String email;
 
     @Column(name = "created_at")
-    private LocalDateTime created_at;
+    private LocalDateTime createdat;
 
     @OneToMany(mappedBy = "sender")
     private List<MessageEntity> messages = new ArrayList<>();
+
+    @PrePersist
+    public void prePersist(){
+        this.createdat = LocalDateTime.now();
+    }
 
     public UserEntity() {
     }
@@ -35,7 +40,7 @@ public class UserEntity {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.created_at = created_at;
+        this.createdat = created_at;
     }
 
     public Long getId() {
@@ -50,8 +55,8 @@ public class UserEntity {
         return email;
     }
 
-    public LocalDateTime getCreated_at() {
-        return created_at;
+    public LocalDateTime getCreatedat() {
+        return createdat;
     }
 
     public void setName(String name) {
@@ -66,12 +71,12 @@ public class UserEntity {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         UserEntity that = (UserEntity) o;
-        return Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(email, that.email) && Objects.equals(created_at, that.created_at) && Objects.equals(messages, that.messages);
+        return Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(email, that.email) && Objects.equals(createdat, that.createdat) && Objects.equals(messages, that.messages);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, email, created_at, messages);
+        return Objects.hash(id, name, email, createdat, messages);
     }
 
     @Override
@@ -80,7 +85,7 @@ public class UserEntity {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", created_at=" + created_at +
+                ", created_at=" + createdat +
                 ", messages=" + messages +
                 '}';
     }
