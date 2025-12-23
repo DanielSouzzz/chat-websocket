@@ -1,0 +1,9 @@
+.listContainer {
+  flex: 1; /* Ocupa todo o espaço vertical disponível */
+  overflow-y: auto; /* Cria a barra de rolagem vertical se necessário */
+  display: flex;
+  flex-direction: column; /* Empilha um embaixo do outro */
+  padding: 20px;
+  background-color: #e5ddd5; /* Cor de fundo*/
+  gap: 8px; /* Espaço entre as mensagens */
+}
