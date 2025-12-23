@@ -1,11 +1,11 @@
 export interface User {
-  id: string;
+  id: number;
   name: string;
   email: string;
 }
 
 export interface Message {
-  id: string;
+  id: number;
   text: string;
   createdAt: string;
 
