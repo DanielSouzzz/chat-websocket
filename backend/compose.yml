@@ -1,0 +1,17 @@
+services:
+  pumchat-db:
+    image: mysql:8.0
+    container_name: pumchat
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: pum23
+      MYSQL_DATABASE: pumchat
+      MYSQL_USER: pumuser
+      MYSQL_PASSWORD: pum123
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
