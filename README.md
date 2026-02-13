@@ -47,7 +47,7 @@ Maria • 2025-09-22 19:52
 Oi Daniel!
 
 **Imagem de demonstração do chat:**   
-![Chat Demo](assets/img.png)
+![Chat Demo](backend/assets/img.png)
 
 ---
 
