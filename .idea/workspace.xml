@@ -4,9 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8576094a-45da-4d0f-b59d-e5e71b7d61d5" name="Changes" comment="">
-      <changelist_data name="danielsouzzz" email="" automatic="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8576094a-45da-4d0f-b59d-e5e71b7d61d5" name="Changes" comment="Add imagem ao README">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageBubble/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageBubble/styles.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageInput/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageInput/styles.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageList/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageList/styles.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Chat/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Chat/styles.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/messageService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/types/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +68,12 @@
     &quot;assignee&quot;: &quot;DanielSouzzz&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:DanielSouzzz/chat-websocket.git",
-    "accountId": "0c27eb31-3071-4e7b-a8cf-e03372518978"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:DanielSouzzz/chat-websocket.git&quot;,
+    &quot;accountId&quot;: &quot;0c27eb31-3071-4e7b-a8cf-e03372518978&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -157,8 +188,20 @@
       <workItem from="1770305100152" duration="2176000" />
       <workItem from="1770853320895" duration="288000" />
       <workItem from="1770859635980" duration="2907000" />
-      <workItem from="1771022198171" duration="326000" />
+      <workItem from="1771022198171" duration="679000" />
+      <workItem from="1771023154071" duration="890000" />
+      <workItem from="1771091989920" duration="604000" />
+      <workItem from="1771109021167" duration="358000" />
     </task>
+    <task id="LOCAL-00001" summary="Add imagem ao README">
+      <option name="closed" value="true" />
+      <created>1771022822256</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771022822256</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,5 +235,7 @@
       <path value="$PROJECT_DIR$/backend" />
       <path value="$PROJECT_DIR$/frontend" />
     </ignored-roots>
+    <MESSAGE value="Add imagem ao README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add imagem ao README" />
   </component>
 </project>
