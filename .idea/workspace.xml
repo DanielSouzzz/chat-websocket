@@ -4,62 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8576094a-45da-4d0f-b59d-e5e71b7d61d5" name="Changes" comment="Add imagem ao README">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageBubble/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageBubble/styles.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageInput/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageInput/styles.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageList/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/MessageList/styles.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Chat/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Chat/styles.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/messageService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/types/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+    <list default="true" id="8ded8dfd-7a4a-4b88-8ced-0dadd806ba6a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="danielsouzzz" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -74,69 +27,39 @@
     &quot;accountId&quot;: &quot;0c27eb31-3071-4e7b-a8cf-e03372518978&quot;
   }
 }</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="334ee9Ml2vlmDlLjb9qGSiYMAAd" />
+  <component name="ProjectId" id="39uGH6bdQLr0CdTx0MtfNg24f9k" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.ChatWebsocketApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/daniel/Projects/chat-websocket&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;\\\\wsl.localhost\\Ubuntu\\home\\daniel\\projects\\chat-websocket\\frontend\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="\\wsl.localhost\Ubuntu\home\daniel\projects\chat-websocket" />
-      <recent name="\\wsl.localhost\Ubuntu\home\daniel\projects\chat-websocket\backend" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="ChatWebsocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="chat-websocket" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.aplication.chatwebsocket.ChatWebsocketApplication" />
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,90 +75,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8576094a-45da-4d0f-b59d-e5e71b7d61d5" name="Changes" comment="" />
-      <created>1758580865634</created>
+      <changelist id="8ded8dfd-7a4a-4b88-8ced-0dadd806ba6a" name="Changes" comment="" />
+      <created>1771538452768</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1758580865634</updated>
-      <workItem from="1758580866942" duration="1151000" />
-      <workItem from="1758656303017" duration="8576000" />
-      <workItem from="1758738762701" duration="10369000" />
-      <workItem from="1758757015547" duration="2264000" />
-      <workItem from="1758812297192" duration="1202000" />
-      <workItem from="1758833850455" duration="7300000" />
-      <workItem from="1758845534796" duration="748000" />
-      <workItem from="1758886582230" duration="1198000" />
-      <workItem from="1758902615799" duration="2580000" />
-      <workItem from="1758933524841" duration="9199000" />
-      <workItem from="1759006239192" duration="9821000" />
-      <workItem from="1759097647505" duration="110000" />
-      <workItem from="1759097771758" duration="7154000" />
-      <workItem from="1759196160212" duration="608000" />
-      <workItem from="1759280441674" duration="1288000" />
-      <workItem from="1760309281350" duration="767000" />
-      <workItem from="1760612635241" duration="609000" />
-      <workItem from="1760661482665" duration="10330000" />
-      <workItem from="1760737200281" duration="17366000" />
-      <workItem from="1760756538227" duration="1720000" />
-      <workItem from="1766527053392" duration="1764000" />
-      <workItem from="1766602968023" duration="301000" />
-      <workItem from="1766867816801" duration="1678000" />
-      <workItem from="1767128843042" duration="37000" />
-      <workItem from="1769736769268" duration="2311000" />
-      <workItem from="1770140083913" duration="42000" />
-      <workItem from="1770162566198" duration="2700000" />
-      <workItem from="1770223070491" duration="2053000" />
-      <workItem from="1770305100152" duration="2176000" />
-      <workItem from="1770853320895" duration="288000" />
-      <workItem from="1770859635980" duration="2907000" />
-      <workItem from="1771022198171" duration="679000" />
-      <workItem from="1771023154071" duration="890000" />
-      <workItem from="1771091989920" duration="604000" />
-      <workItem from="1771109021167" duration="358000" />
+      <updated>1771538452768</updated>
+      <workItem from="1771538454507" duration="1400000" />
+      <workItem from="1771847716974" duration="10000" />
+      <workItem from="1771892162545" duration="8000" />
     </task>
-    <task id="LOCAL-00001" summary="Add imagem ao README">
-      <option name="closed" value="true" />
-      <created>1771022822256</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1771022822256</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/backend" />
-      <path value="$PROJECT_DIR$/frontend" />
-    </ignored-roots>
-    <MESSAGE value="Add imagem ao README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add imagem ao README" />
   </component>
 </project>

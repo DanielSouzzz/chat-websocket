@@ -16,17 +16,24 @@ public class SendMsgController {
         this.messageService = messageService;
     }
 
+    // É o equivalente ao @PostMapping, mas para WebSocket (STOMP)
     @MessageMapping("/sendPrivateMessage")
     public void sendMessagePrivate(MessageEntity messageRequest){
+
+        // Salva a msg no banco
         MessageEntity message = messageService.sendMessagePrivate(messageRequest);
 
+        // Envia a msg para o destinatário
         messagingTemplate.convertAndSendToUser(
                 message.getReceiver().getId().toString(),
                 "/queue/messages",
                 message
         );
 
+        // Envia a msg para o remetente
         messagingTemplate.convertAndSendToUser(
-                message.getSender().getId().toString(),"/queue/messages", message);
+                message.getSender().getId().toString(),
+                "/queue/messages",
+                message);
     }
 }
